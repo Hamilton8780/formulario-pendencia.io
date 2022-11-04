@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendência</title>
+    <link rel="stylesheet" href="pendencia.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de pendências</h1>
+    </header>
+    <main>
+        <form action="#">
+            <fieldset id="dados-pendencia">
+                
+                <legend>Dados da Pendência</legend>
+
+                <div class="side-left">
+                    <div class="label-left">
+                        <label class="label-data" for="data">Data:</label>
+                        <label class="label-carga" for="carga">Carregamento:</label>
+                        <label class="label-rota" for="rota">Rota:</label>
+                        <label class="label-motorista" for="motorista">Motorista:</label>
+                        <label class="label-entregador" for="entregador">Entregador:</label>
+                    </div>
+                    <div class="input-left">
+                        <input type="datetime-local" name="data" id="data">
+                        <input type="number" name="carga" id="carga" required min="0" max="999999">
+                        <select name="rota" id="rota" required>
+                            <option value="0">Selecione uma rota</option>
+                            <option value="almenara">Almenara</option>
+                            <option value="aguasformosas">Águas Formosas</option>
+                            <option value="capelinha">Capelinha</option>
+                            <option value="coluna">Coluna</option>
+                            <option value="leopoldina">Leopoldina</option>
+                            <option value="pirauba">Pirauba</option>
+                            <option value="timoteo">Timóteo</option>
+                        </select>
+                        <select name="motorista" id="motorista" required>
+                            <option value="0">Selecione um Motorista</option>
+                            <option value="admilson">Admilson</option>
+                            <option value="edmilson">Edmilson</option>
+                            <option value="renato">Renato</option>
+                            <option value="vanderlei">Vanderlei</option>
+                            <option value="vantuir">Vantuir</option>
+                        </select>
+                        <select name="entregador" id="entregador" required>
+                            <option value="0">Selecione um Entergador</option>
+                            <option value="andre">André</option>
+                            <option value="chapa">Chapa</option>
+                            <option value="hebert">Hebert</option>
+                            <option value="igor">Igor</option>
+                            <option value="sidnei">Sidnei</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="side-right">
+                    <div class="label-right">
+                        <label class="label-canhoto" for="canhoto">Canhoto recolhido:</label>
+                        <label class="label-resolvido" for="resolvido">Pendencia resolvida?</label>
+                        <label class="label-conferente" for="conferente">Conferente:</label>
+                        <label class="label-faturamento" for="faturamento">Faturamento:</label>
+                        <label class="label-envio" for="envio">Previsão de envio</label>
+                    </div>
+                    <div class="input-right">
+                        <select name="canhoto" id="canhoto" required>
+                            <option value="0">Selecione uma Opção</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        <select name="resolvido" id="resolvido" required>
+                            <option value="0">Selecione uma opção</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        <select name="conferente" id="conferente" required>
+                            <option value="0">Selecione um conferente</option>
+                            <option value="gandra">Gandra</option>
+                            <option value="generci">Generci</option>
+                            <option value="lindomar">Lindomar</option>
+                            <option value="samuel">Samuel</option>
+                            <option value="saimon">Saimon</option>
+                            <option value="tao">Tão</option>
+                        </select>
+                        <input type="text" name="faturamento" id="faturamento">
+                        <input type="date" name="envio" id="envio">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="dados-cliente">
+                <legend>Dados do Cliente: </legend>
+
+                <div class="side-left">
+                    <div class="label-left">
+                        <label class="label-codcliente" for="codcliente">Cód Cliente:</label>
+                        <label class="label-cliente" for="cliente">Cliente:</label>
+                        <label class="label-endcliente" for="endcliente">Endereço:</label>
+                        <label class="label-number" for="numcliente">N°:</label>
+                    </div>
+                    
+                    <div class="input-left">
+                        <input type="number" name="codcliente" id="codcliente" min="0" max="999999" required>
+                        <input type="text" name="cliente" id="cliente">
+                        <input type="text" name="endcliente" id="endcliente">
+                        <input type="number" name="numcliente" id="numcliente" min="0">
+                    </div>
+                </div>
+                
+                <div class="side-right">
+                    <div class="label-right">                        
+                        <label class="label-telcliente"for="telcliente">Telefone:</label>
+                        <label class="label-pracacliente" for="pracacliente">Cidade:</label>
+                        <label class="label-rotacliente" for="rotacliente">Rota:</label>
+                        <label class="label-bairrocliente" for="bairro">Bairro:</label>
+                    </div>
+                    <div class="input-right">
+                        <input type="tel" name="telcliente" id="telcliente" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}">
+                        <input type="text" name="pracacliente" id="pracacliente">
+                        <input type="text" name="rotacliente" id="rotacliente">
+                        <input type="text" name="bairrocliente" id="bairrocliente">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do produto: </legend>
+                <div class="prod-up">
+                    <label for="cod-prod1">Produto 1:
+                        <input type="number" name="cod-prod1" id="cod-prod1" min="0">
+                        <input type="text" name="prod1" id="prod1">
+                        <input type="number" name="qt-prod1" id="qt-prod1" min="0">
+                        <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
+                    </label>
+                </div>
+
+                <div class="prod-down">
+                    <label for="separador">Separador:
+                        <select name="separador" id="separador">
+                            <option value="0">Selecione um separador</option>
+                            <option value="alen">Alen</option>
+                            <option value="joao">João</option>
+                            <option value="oliveira">Oliveira</option>
+                        </select>
+                    </label>
+                    <label for="motivo">Motivo:
+                        <select name="motivo" id="motivo">
+                            <option value="0">Selecione um motivo</option>
+                            <option value="ecarregamento">Erro Carregamento</option>
+                            <option value="eentrega">Erro Entrega</option>
+                            <option value="prodavariado">Produto avariado</option>
+                        </select>
+                    </label>
+                </div>
+                
+                <div class="prod-up">
+                    <label for="cod-prod1">Produto 2:
+                        <input type="number" name="cod-prod1" id="cod-prod1" min="0">
+                        <input type="text" name="prod1" id="prod1">
+                        <input type="number" name="qt-prod1" id="qt-prod1" min="0">
+                        <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
+                    </label>
+                </div>
+
+                <div class="prod-down">
+                    <label for="separador">Separador:
+                        <select name="separador" id="separador">
+                            <option value="0">Selecione um separador</option>
+                            <option value="alen">Alen</option>
+                            <option value="joao">João</option>
+                            <option value="oliveira">Oliveira</option>
+                        </select>
+                    </label>
+                    <label for="motivo">Motivo:
+                        <select name="motivo" id="motivo">
+                            <option value="0">Selecione um motivo</option>
+                            <option value="ecarregamento">Erro Carregamento</option>
+                            <option value="eentrega">Erro Entrega</option>
+                            <option value="prodavariado">Produto avariado</option>
+                        </select>
+                    </label>
+                </div>
+                <fieldset class="observacao">
+                    <legend>Observação: </legend>
+                    <textarea name="obs" id="obs" cols="30" rows="10">
+                    
+                    </textarea>
+                </fieldset>
+                
+
+            </fieldset>
+            <input type="submit" value="Gravar" id="submit">
+        </form>
+    </main>
+</body>
+</html>
