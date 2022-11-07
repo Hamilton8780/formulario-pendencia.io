@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,23 +59,22 @@
 
                 <div class="side-right">
                     <div class="label-right">
-                        <label class="label-canhoto" for="canhoto">Canhoto recolhido:</label>
+                        <label class="label-canhoto" for="canhoto">Canhoto recolhido?</label>
                         <label class="label-resolvido" for="resolvido">Pendencia resolvida?</label>
                         <label class="label-conferente" for="conferente">Conferente:</label>
                         <label class="label-faturamento" for="faturamento">Faturamento:</label>
                         <label class="label-envio" for="envio">Previsão de envio</label>
                     </div>
                     <div class="input-right">
-                        <select name="canhoto" id="canhoto" required>
-                            <option value="0">Selecione uma Opção</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                        <select name="resolvido" id="resolvido" required>
-                            <option value="0">Selecione uma opção</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
+                        <div class="range">
+                            <label for="canhoto"><input type="radio" name="canhoto" id="canhotosim">Sim</label>
+                            <label for="canhoto"><input type="radio" name="canhoto" id="canhotonao">Não</label>
+                        </div>
+                        <div class="range">
+                            <label for="resolvido"><input type="radio" name="resolvido" id="resolvidosim">Sim</label>
+                            <label for="resolvido"><input type="radio" name="resolvido" id="resolvidonao">Não</label>
+                        </div>
+
                         <select name="conferente" id="conferente" required>
                             <option value="0">Selecione um conferente</option>
                             <option value="gandra">Gandra</option>

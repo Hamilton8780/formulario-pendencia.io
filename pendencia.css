@@ -86,6 +86,11 @@ legend{
 #data, #envio, #carga{
     width: 125px;
 }
+.range label input{
+    margin: 7px 3px;
+    display: inline;
+    width: fit-content;
+}
 
 /*Fieldset dados do cliente*/
 #cliente, #endcliente{
