@@ -7,7 +7,15 @@
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 
+body{
+    background: url(../imagens/background-login.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
 form{
+    background-color: white;
+    border-radius: 10px;
     position: absolute;
     width: fit-content;;
     top: 50%;
