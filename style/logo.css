@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+form{
+    position: absolute;
+    width: fit-content;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+legend{
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+#logo img{
+    width: 300px;
+    height: 300px;
+}
+
+label{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.btn{
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
