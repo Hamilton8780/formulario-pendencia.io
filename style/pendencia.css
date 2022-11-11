@@ -180,9 +180,13 @@ legend{
     }
     .icon{
         top: 50%;
+        right: 10px;
     }
 }
 @media (max-width: 500px){
+    body{
+        font-size: .9em;
+    }
     .side-left{
         float: none;
         margin: auto;
@@ -190,5 +194,11 @@ legend{
     .side-right{
         float: none;
         margin: auto;
+    }
+    #cliente, #endcliente{
+        width: 260px;
+    }
+    .observacao{
+        width: 97%;
     }
 }
