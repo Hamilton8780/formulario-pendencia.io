@@ -184,7 +184,10 @@ legend{
     }
 }
 @media (max-width: 500px){
-    html{
+    h1{
+        font-size: .8em
+    }
+    main{
         font-size: .9em;
     }
     .side-left{
