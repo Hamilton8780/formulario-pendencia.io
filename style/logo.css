@@ -8,11 +8,11 @@
 }
 
 body{
-    height: 85vh;
+    height: 100vh;
     background: url(../imagens/background-login.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: cover;
+    background-size: 70%;
 }
 form{
     background-color: white;
@@ -50,4 +50,10 @@ label{
     margin: auto;
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 900px){
+    body{
+        background: none;
+    }
 }
