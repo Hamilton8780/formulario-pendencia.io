@@ -9,7 +9,7 @@
 
 body{
     height: 100vh;
-    background: url(../imagens/background-login.jpg);
+    background-image: url(../imagens/background-login.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 70%;
@@ -54,6 +54,7 @@ label{
 
 @media (max-width: 900px){
     body{
-        background: none;
+        background-size: 100%;
+        background-image: linear-gradient(#ff3b0b, black);
     }
 }
