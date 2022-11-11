@@ -8,6 +8,7 @@
 }
 
 body{
+    height: 98vh;
     background: url(../imagens/background-login.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
