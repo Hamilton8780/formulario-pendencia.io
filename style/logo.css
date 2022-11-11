@@ -55,6 +55,6 @@ label{
 @media (max-width: 900px){
     body{
         background-size: 100%;
-        background-image: linear-gradient(#ff3b0b, black);
+        background-image: linear-gradient(#ff3b0b, #000000);
     }
 }
