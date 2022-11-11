@@ -10,7 +10,7 @@
 body{
     background: url(../imagens/background-login.jpg);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: left bottom;
     background-size: cover;
 }
 form{
