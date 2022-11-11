@@ -157,3 +157,38 @@ legend{
     text-transform: uppercase;
 
 }
+
+@media (max-width: 900px){
+    main{
+        width: 100%;
+    }
+    form{
+        width: 95%;
+    }
+}
+@media (max-width: 800px){
+    header{
+        height: 120px;
+    }
+    main{
+        top:120px;
+    }
+    h1{
+        width: 320px;
+        height: 120px;
+        margin: auto;
+    }
+    .icon{
+        top: 50%;
+    }
+}
+@media (max-width: 500px){
+    .side-left{
+        float: none;
+        margin: auto;
+    }
+    .side-right{
+        float: none;
+        margin: auto;
+    }
+}
