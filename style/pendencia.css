@@ -177,6 +177,7 @@ legend{
         width: 320px;
         height: 120px;
         margin: auto;
+        font-size: .8em;
     }
     .icon{
         top: 50%;
@@ -184,9 +185,6 @@ legend{
     }
 }
 @media (max-width: 500px){
-    h1{
-        font-size: .8em
-    }
     main{
         font-size: .9em;
     }
