@@ -171,9 +171,6 @@ legend{
         height: 120px;
         font-size: .9em;
     }
-    main{
-        top:120px;
-    }
     h1{
         width: 320px;
         height: 120px;
@@ -183,10 +180,8 @@ legend{
         top: 50%;
         right: 10px;
     }
-}
-@media (max-width: 500px){
     main{
-        font-size: .9em;
+        top:120px;
     }
     .side-left{
         float: none;
@@ -196,8 +191,22 @@ legend{
         float: none;
         margin: auto;
     }
+    .label-conferente{
+        padding-top: 7px;
+    }
+}
+@media (max-width: 500px){
+    main{
+        font-size: .9em;
+    }
+    .label-left label, .label-right label{
+        margin: 9px 2px;
+    }
+    .label-conferente{
+        padding-top: 1px;
+    }
     #cliente, #endcliente{
-        width: 260px;
+        width: 257px;
     }
     .observacao{
         width: 97%;
