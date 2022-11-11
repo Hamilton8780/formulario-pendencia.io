@@ -15,8 +15,7 @@ body{
     background-size: 70%;
 }
 form{
-    background-color: white;
-    border-radius: 10px;
+    background-color: transparent;
     position: absolute;
     width: fit-content;
     top: 50%;
@@ -25,11 +24,13 @@ form{
 }
 
 fieldset{
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 13px;
+    background-color: white;
 }
 
 legend{
-    margin-left: 10px;
+    margin-left: 15px;
     padding: 0 5px;
 }
 
@@ -56,5 +57,10 @@ label{
     body{
         background-size: 100%;
         background-image: linear-gradient(#ff3b0b, #000000);
+    }
+    legend{
+        position: relative;
+        top: 9px;
+        border-top: 1px solid black;
     }
 }
