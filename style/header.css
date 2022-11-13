@@ -41,3 +41,14 @@ a:hover{
     font-weight: 700;
     text-shadow: 1px 1px 3px black;
 }
+
+@media (max-width: 570px){
+    header{
+        height: 85px;
+    }
+
+    nav{
+        left: 23px;
+        top: 65px;
+    }
+}

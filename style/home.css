@@ -7,14 +7,6 @@ body{
 }
 
 @media (max-width: 570px){
-    header{
-        height: 85px;
-    }
-
-    nav{
-        left: 23px;
-        top: 65px;
-    }
     body{
         background-position: center bottom;
     }
