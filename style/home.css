@@ -19,3 +19,8 @@ body{
         background-position: center bottom;
     }
 }
+@media (max-width: 400px){
+    body{
+        background-position: right bottom;
+    }
+}
