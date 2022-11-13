@@ -1,5 +1,6 @@
 header{
     position: fixed;
+    top: 0;
     width: 100%;
     height: 75px;
     background-image: linear-gradient( to left, #3398cc, #000000);
@@ -12,7 +13,8 @@ h1{
     left: 20px;
     letter-spacing: 3px;
     font-variant: small-caps;
-    color: aliceblue;
+    color: white;
+    font-weight: 900;
 }
 nav{
     position: absolute;
