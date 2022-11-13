@@ -44,11 +44,11 @@ a:hover{
 
 @media (max-width: 570px){
     header{
-        height: 85px;
+        height: 90px;
     }
 
     nav{
         left: 23px;
-        top: 65px;
+        top: 70px;
     }
 }
