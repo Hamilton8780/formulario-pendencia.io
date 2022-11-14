@@ -37,6 +37,10 @@ li a{
     color: white;
 }
 
+ul li:hover{
+    margin-right: 20px;
+}
+
 a:hover{
     font-weight: 700;
     text-shadow: 1px 1px 3px black;
