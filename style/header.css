@@ -7,6 +7,8 @@ header{
     box-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 h1{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -14,7 +16,6 @@ h1{
     letter-spacing:2px;
     font-variant: small-caps;
     color: white;
-    font-weight: 600;
 }
 nav{
     position: absolute;
