@@ -47,7 +47,6 @@ label{
 @media (max-width: 900px){
     body{
         background-size: 100%;
-        background-image: linear-gradient(#3398cc, #000000);
     }
     legend{
         position: relative;
