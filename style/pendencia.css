@@ -15,7 +15,7 @@ header{
     font-weight: 700;
     text-shadow: 3px 3px 5px black;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to left, lightgray, gray);
+    background-image: linear-gradient( to left, #3398cc, #000000);
 }
 .icon{
     position: absolute;

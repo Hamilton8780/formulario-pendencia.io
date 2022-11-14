@@ -9,11 +9,6 @@ body{
 @media (max-width: 570px){
     body{
         background-image: url(../imagens/pexels-photoscom-93398-mod.jpg);
-        background-position: center bottom;
-    }
-}
-@media (max-width: 400px){
-    body{
         background-position: right bottom;
     }
 }
