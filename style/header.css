@@ -28,7 +28,7 @@ ul li{
     list-style: none;
     width: 75px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
     display: block;
     float: left;
@@ -37,19 +37,16 @@ ul li{
     background-color: #1c536e36;
     border: 1px solid #143c5e2a;
     border-radius: 2px;
-    letter-spacing: 1px;
 }
 
 li a{
     text-decoration: none;
-    font-variant: small-caps;
     color: white;
 }
 
 ul li:hover{
     box-shadow: 1px 1px 2px black;
     font-weight: 700;
-    letter-spacing: 1px;
     text-shadow: 1px 1px 1px black;
 }
 

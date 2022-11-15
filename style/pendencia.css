@@ -15,7 +15,7 @@ header{
     font-weight: 700;
     text-shadow: 3px 3px 5px black;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient( to left, #3398cc, #000000);
+    background-image: linear-gradient( to left, #3398cc, #0A1E28);
 }
 .icon{
     position: absolute;
@@ -46,7 +46,7 @@ form{
     margin: auto;
 }
 fieldset{
-    background-image: linear-gradient(to bottom,#ffffff, #3295ca7c, #1b506c50);
+    background-image: linear-gradient(to bottom,#fffefe, #d6d2d2c9);
     margin: 10px 0;
     border-radius: 10px;
 }
