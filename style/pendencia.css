@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: #1B506C;
 }
 header{
     position: fixed;
@@ -46,7 +46,7 @@ form{
     margin: auto;
 }
 fieldset{
-    background-image: linear-gradient(to bottom,rgb(240, 240, 240), rgb(210, 210, 210));
+    background-image: linear-gradient(to bottom,#ffffff, #3295ca7c, #1b506c50);
     margin: 10px 0;
     border-radius: 10px;
 }
@@ -139,6 +139,7 @@ legend{
     margin-bottom: 15px;
 }
 .observacao{
+    background-color: white;
     width: 85%;
     margin: 0 auto 10px;
 }
