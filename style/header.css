@@ -35,11 +35,11 @@ ul li{
     background-color: #1c536e36;
     border: 1px solid #143c5e2a;
     border-radius: 2px;
+    letter-spacing: 2px;
 }
 
 li a{
     text-decoration: none;
-    letter-spacing: 2px;
     font-variant: small-caps;
     color: white;
 }
@@ -47,6 +47,7 @@ li a{
 ul li:hover{
     box-shadow: 1px 1px 2px black;
     font-weight: 700;
+    letter-spacing: 1px;
     text-shadow: 1px 1px 1px black;
 }
 
