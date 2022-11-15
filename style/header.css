@@ -26,7 +26,7 @@ nav{
 
 ul li{
     list-style: none;
-    width: 90px;
+    width: 88px;
     text-align: center;
     display: block;
     float: left;
@@ -39,7 +39,7 @@ ul li{
 
 li a{
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-variant: small-caps;
     color: white;
 }
