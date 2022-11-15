@@ -26,12 +26,12 @@ nav{
 
 ul li{
     list-style: none;
-    width: 88px;
+    width: 75px;
     text-align: center;
     display: block;
     float: left;
     margin: 0 1px;
-    padding: 1px 7px;
+    padding: 1px 4px;
     background-color: #1c536e36;
     border: 1px solid #143c5e2a;
     border-radius: 2px;
@@ -45,9 +45,9 @@ li a{
 }
 
 ul li:hover{
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 2px black;
     font-weight: 700;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 @media (max-width: 570px){
