@@ -152,14 +152,7 @@ legend{
 }
 
 @media (max-width: 900px){
-    main{
-        width: 100%;
-    }
-    form{
-        width: 95%;
-    }
-}
-@media (max-width: 800px){
+
     header{
         height: 120px;
         font-size: .9em;
@@ -174,23 +167,49 @@ legend{
         right: 10px;
     }
     main{
+        width: 100%;
         top:120px;
     }
+    form{
+        width: 95%;
+    }
     .side-left{
+        width: 500px;
         float: none;
         margin: auto;
     }
+    .label-left{
+        position: relative;
+        left: 25%;
+    }
+    .input-left{
+        position: relative;
+        right: 10%;
+    }
     .side-right{
+        width: 500px;
         float: none;
         margin: auto;
+    }
+    .label-right{
+        position: relative;
+        left: 17%;
+    }
+    .input-right{
+        position: relative;
+        right: 10%;
     }
     .label-conferente{
         padding-top: 7px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 540px){
     main{
         font-size: .9em;
+    }
+
+    .side-left, .side-right{
+        width: 300px;
     }
     .label-left label, .label-right label{
         margin: 9px 2px;
