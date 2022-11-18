@@ -24,14 +24,12 @@ header{
     width: 30px;
     height: 100%;
 }
-
 ion-icon{
     position: relative;
     top: 10px;
     width: 30px;
     height: 30px;
 }
-
 main{
     position: relative;
     top: 60px;
@@ -58,39 +56,47 @@ legend{
     margin-bottom: 10px;
 }
 /*Fieldset dados da pendência*/
-.side-left, .side-right{
+.side-left-pendencia, 
+.side-right-pendencia{
     overflow: auto;
     width: fit-content;
 }
-.side-left{
+.side-left-pendencia{
     float: left;    
 }
-.side-right{
+.side-right-pendencia{
     float: right;
 }
-.label-left label, .label-right label{
+.label-left-pendencia label,
+.label-right-pendencia label{
     margin: 6px;
     display: block;
 }
-.label-left, .label-right{
+.label-left-pendencia,
+.label-right-pendencia{
     float: left;
     width: fit-content;
     text-align: right;
 }
-.input-left input, .input-right input{
+.input-left-pendencia input,
+.input-right-pendencia input{
     display: block;
     margin: 5px;
     width: 200px;
 }
-.input-left select, .input-right select{
+.input-left-pendencia select,
+.input-right-pendencia select{
     display: block;
     margin: 5px;
     width: 200px;
 }
-.input-left, .input-right{
+.input-left-pendencia,
+.input-right-pendencia{
     float: right;
 }
-#data, #envio, #carga{
+#data,
+#envio,
+#carga{
     width: 125px;
 }
 .range label input{
@@ -98,15 +104,47 @@ legend{
     display: inline;
     width: fit-content;
 }
-
 /*Fieldset dados do cliente*/
-#cliente, #endcliente{
+.side-left-cliente,
+.side-right-cliente{
+    overflow: auto;
+    width: fit-content;
+}
+.side-left-cliente{
+    float: left;    
+}
+.side-right-cliente,
+.input-left-cliente,
+.input-right-cliente{
+    float: right;
+}
+.label-left-cliente label,
+.label-right-cliente label{
+    margin: 6px;
+    display: block;
+}
+.label-left-cliente,
+.label-right-cliente{
+    float: left;
+    width: fit-content;
+    text-align: right;
+}
+.input-left-cliente input,
+.input-right-cliente input,
+.input-left-cliente select,
+.input-right-cliente select{
+    display: block;
+    margin: 5px;
+    width: 200px;
+}
+#cliente,
+#endcliente{
     width: 345px;
 }
-#codcliente, #numcliente{
+#codcliente,
+#numcliente{
     width: 80px;
 }
-
 #telcliente{
     width: 110px;
 }
@@ -116,7 +154,12 @@ legend{
     font-weight: 800;
     box-shadow: 2px 2px 5px black;
 }
-
+/*Fieldset dados do produto*/
+#produto1,
+#produto2{
+    width: 95%;
+    margin: auto;
+}
 #cod-prod1{
     width: 65px;
 }
@@ -140,7 +183,7 @@ legend{
 }
 .observacao{
     background-color: white;
-    width: 85%;
+    width: 95%;
     margin: 0 auto 10px;
 }
 #obs{
@@ -152,7 +195,6 @@ legend{
 }
 
 @media (max-width: 900px){
-
     header{
         height: 120px;
         font-size: .9em;
@@ -173,51 +215,47 @@ legend{
     form{
         width: 95%;
     }
-    .side-left{
-        width: 500px;
+    .side-left-pendencia,
+    .side-left-cliente,
+    .side-right-pendencia,
+    .side-right-cliente{
+        width: 100%;
         float: none;
         margin: auto;
     }
-    .label-left{
+    .label-left-pendencia,
+    .input-left-pendencia,
+    .label-right-pendencia,
+    .input-right-pendencia{
         position: relative;
-        left: 25%;
-    }
-    .input-left{
-        position: relative;
-        right: 10%;
-    }
-    .side-right{
-        width: 500px;
-        float: none;
-        margin: auto;
-    }
-    .label-right{
-        position: relative;
-        left: 17%;
-    }
-    .input-right{
-        position: relative;
-        right: 10%;
+        width: 50%;
     }
     .label-conferente{
-        padding-top: 7px;
+        padding-top: 5px;
+    }
+    .label-left-cliente,
+    .label-right-cliente{
+        width: 30%;
+    }
+        .input-left-cliente,
+        .input-right-cliente{
+            width: 70%;
     }
 }
-@media (max-width: 540px){
+@media (max-width: 545px){
     main{
-        font-size: .9em;
+        font-size: .8em;
     }
 
-    .side-left, .side-right{
-        width: 300px;
-    }
-    .label-left label, .label-right label{
+    .label-left-pendencia label,
+    .label-right-pendencia label{
         margin: 9px 2px;
     }
     .label-conferente{
         padding-top: 1px;
     }
-    #cliente, #endcliente{
+    #cliente,
+    #endcliente{
         width: 257px;
     }
     .observacao{

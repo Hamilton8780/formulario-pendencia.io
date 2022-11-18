@@ -21,15 +21,15 @@
                 
                 <legend>Dados da Pendência</legend>
 
-                <div class="side-left">
-                    <div class="label-left">
+                <div class="side-left-pendencia">
+                    <div class="label-left-pendencia">
                         <label class="label-data" for="data">Data:</label>
                         <label class="label-carga" for="carga">Carregamento:</label>
                         <label class="label-rota" for="rota">Rota:</label>
                         <label class="label-motorista" for="motorista">Motorista:</label>
                         <label class="label-entregador" for="entregador">Entregador:</label>
                     </div>
-                    <div class="input-left">
+                    <div class="input-left-pendencia">
                         <input type="datetime-local" name="data" id="data">
                         <input type="number" name="carga" id="carga" required min="0" max="999999">
                         <select name="rota" id="rota" required>
@@ -61,15 +61,15 @@
                     </div>
                 </div>
 
-                <div class="side-right">
-                    <div class="label-right">
+                <div class="side-right-pendencia">
+                    <div class="label-right-pendencia">
                         <label class="label-canhoto" for="canhoto">Canhoto recolhido?</label>
                         <label class="label-resolvido" for="resolvido">Pendencia resolvida?</label>
                         <label class="label-conferente" for="conferente">Conferente:</label>
                         <label class="label-faturamento" for="faturamento">Faturamento:</label>
                         <label class="label-envio" for="envio">Previsão de envio:</label>
                     </div>
-                    <div class="input-right">
+                    <div class="input-right-pendencia">
                         <div class="range">
                             <label for="canhoto"><input type="radio" name="canhoto" id="canhotosim">Sim</label>
                             <label for="canhoto"><input type="radio" name="canhoto" id="canhotonao">Não</label>
@@ -97,15 +97,15 @@
             <fieldset id="dados-cliente">
                 <legend>Dados do Cliente: </legend>
 
-                <div class="side-left">
-                    <div class="label-left">
+                <div class="side-left-cliente">
+                    <div class="label-left-cliente">
                         <label class="label-codcliente" for="codcliente">Cód Cliente:</label>
                         <label class="label-cliente" for="cliente">Cliente:</label>
                         <label class="label-endcliente" for="endcliente">Endereço:</label>
                         <label class="label-number" for="numcliente">N°:</label>
                     </div>
                     
-                    <div class="input-left">
+                    <div class="input-left-cliente">
                         <input type="number" name="codcliente" id="codcliente" min="0" max="999999" required>
                         <input type="text" name="cliente" id="cliente">
                         <input type="text" name="endcliente" id="endcliente">
@@ -113,14 +113,14 @@
                     </div>
                 </div>
                 
-                <div class="side-right">
-                    <div class="label-right">                        
+                <div class="side-right-cliente">
+                    <div class="label-right-cliente">                        
                         <label class="label-telcliente"for="telcliente">Telefone:</label>
                         <label class="label-pracacliente" for="pracacliente">Cidade:</label>
                         <label class="label-rotacliente" for="rotacliente">Rota:</label>
                         <label class="label-bairrocliente" for="bairro">Bairro:</label>
                     </div>
-                    <div class="input-right">
+                    <div class="input-right-cliente">
                         <input type="tel" name="telcliente" id="telcliente" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}">
                         <input type="text" name="pracacliente" id="pracacliente">
                         <input type="text" name="rotacliente" id="rotacliente">
@@ -129,63 +129,67 @@
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset id="dados-produto">
                 <legend>Dados do produto: </legend>
-                <div class="prod-up">
-                    <label for="cod-prod1">Produto 1:
-                        <input type="number" name="cod-prod1" id="cod-prod1" min="0">
-                        <input type="text" name="prod1" id="prod1">
-                        <input type="number" name="qt-prod1" id="qt-prod1" min="0">
-                        <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
-                    </label>
-                </div>
-
-                <div class="prod-down">
-                    <label for="separador">Separador:
-                        <select name="separador" id="separador">
-                            <option value="0">Selecione um separador</option>
-                            <option value="alen">Alen</option>
-                            <option value="joao">João</option>
-                            <option value="oliveira">Oliveira</option>
-                        </select>
-                    </label>
-                    <label for="motivo">Motivo:
-                        <select name="motivo" id="motivo">
-                            <option value="0">Selecione um motivo</option>
-                            <option value="ecarregamento">Erro Carregamento</option>
-                            <option value="eentrega">Erro Entrega</option>
-                            <option value="prodavariado">Produto avariado</option>
-                        </select>
-                    </label>
-                </div>
+                <fieldset id="produto1">
+                    <legend>Produto 1:</legend>
+                    <div class="prod-up">
+                        <label for="cod-prod1">Cód:
+                            <input type="number" name="cod-prod1" id="cod-prod1" min="0">
+                            <input type="text" name="prod1" id="prod1">
+                            <input type="number" name="qt-prod1" id="qt-prod1" min="0">
+                            <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
+                        </label>
+                    </div>
+                    <div class="prod-down">
+                        <label for="separador">Separador:
+                            <select name="separador" id="separador">
+                                <option value="0">Selecione um separador</option>
+                                <option value="alen">Alen</option>
+                                <option value="joao">João</option>
+                                <option value="oliveira">Oliveira</option>
+                            </select>
+                        </label>
+                        <label for="motivo">Motivo:
+                            <select name="motivo" id="motivo">
+                                <option value="0">Selecione um motivo</option>
+                                <option value="ecarregamento">Erro Carregamento</option>
+                                <option value="eentrega">Erro Entrega</option>
+                                <option value="prodavariado">Produto avariado</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
                 
-                <div class="prod-up">
-                    <label for="cod-prod1">Produto 2:
-                        <input type="number" name="cod-prod1" id="cod-prod1" min="0">
-                        <input type="text" name="prod1" id="prod1">
-                        <input type="number" name="qt-prod1" id="qt-prod1" min="0">
-                        <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
-                    </label>
-                </div>
-
-                <div class="prod-down">
-                    <label for="separador">Separador:
-                        <select name="separador" id="separador">
-                            <option value="0">Selecione um separador</option>
-                            <option value="alen">Alen</option>
-                            <option value="joao">João</option>
-                            <option value="oliveira">Oliveira</option>
-                        </select>
-                    </label>
-                    <label for="motivo">Motivo:
-                        <select name="motivo" id="motivo">
-                            <option value="0">Selecione um motivo</option>
-                            <option value="ecarregamento">Erro Carregamento</option>
-                            <option value="eentrega">Erro Entrega</option>
-                            <option value="prodavariado">Produto avariado</option>
-                        </select>
-                    </label>
-                </div>
+                <fieldset id="produto2">
+                    <legend>produto 2:</legend>
+                    <div class="prod-up">
+                        <label for="cod-prod1">Cód:
+                            <input type="number" name="cod-prod1" id="cod-prod1" min="0">
+                            <input type="text" name="prod1" id="prod1">
+                            <input type="number" name="qt-prod1" id="qt-prod1" min="0">
+                            <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
+                        </label>
+                    </div>
+                    <div class="prod-down">
+                        <label for="separador">Separador:
+                            <select name="separador" id="separador">
+                                <option value="0">Selecione um separador</option>
+                                <option value="alen">Alen</option>
+                                <option value="joao">João</option>
+                                <option value="oliveira">Oliveira</option>
+                            </select>
+                        </label>
+                        <label for="motivo">Motivo:
+                            <select name="motivo" id="motivo">
+                                <option value="0">Selecione um motivo</option>
+                                <option value="ecarregamento">Erro Carregamento</option>
+                                <option value="eentrega">Erro Entrega</option>
+                                <option value="prodavariado">Produto avariado</option>
+                            </select>
+                        </label>
+                    </div>
+                </fieldset>
                 <fieldset class="observacao">
                     <legend>Observação: </legend>
                     <textarea name="obs" id="obs" cols="30" rows="10">
