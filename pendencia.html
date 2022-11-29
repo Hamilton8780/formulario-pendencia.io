@@ -133,61 +133,73 @@
                 <legend>Dados do produto: </legend>
                 <fieldset id="produto1">
                     <legend>Produto 1:</legend>
-                    <div class="prod-up">
+                    <div class="prod-up-left">
                         <label for="cod-prod1">Cód:
                             <input type="number" name="cod-prod1" id="cod-prod1" min="0">
                             <input type="text" name="prod1" id="prod1">
-                            <input type="number" name="qt-prod1" id="qt-prod1" min="0">
-                            <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
                         </label>
                     </div>
+                    <div class="prod-up-right">
+                        <label for="qt-prod1">Qtde: <input type="number" name="qt-prod1" id="qt-prod1" min="0"></label>
+                        <label for="emb-prod1">Unid: <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2"></label>
+                    </div>
                     <div class="prod-down">
-                        <label for="separador">Separador:
-                            <select name="separador" id="separador">
-                                <option value="0">Selecione um separador</option>
-                                <option value="alen">Alen</option>
-                                <option value="joao">João</option>
-                                <option value="oliveira">Oliveira</option>
-                            </select>
-                        </label>
-                        <label for="motivo">Motivo:
-                            <select name="motivo" id="motivo">
-                                <option value="0">Selecione um motivo</option>
-                                <option value="ecarregamento">Erro Carregamento</option>
-                                <option value="eentrega">Erro Entrega</option>
-                                <option value="prodavariado">Produto avariado</option>
-                            </select>
-                        </label>
+                        <div class="div-separador">
+                            <label for="separador">Separador:
+                                <select name="separador" id="separador">
+                                    <option value="0">Selecione um separador</option>
+                                    <option value="alen">Alen</option>
+                                    <option value="joao">João</option>
+                                    <option value="oliveira">Oliveira</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="div-motivo">
+                            <label for="motivo">Motivo:
+                                <select name="motivo" id="motivo">
+                                    <option value="0">Selecione um motivo</option>
+                                    <option value="ecarregamento">Erro Carregamento</option>
+                                    <option value="eentrega">Erro Entrega</option>
+                                    <option value="prodavariado">Produto avariado</option>
+                                </select>
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
                 
                 <fieldset id="produto2">
                     <legend>produto 2:</legend>
-                    <div class="prod-up">
-                        <label for="cod-prod1">Cód:
-                            <input type="number" name="cod-prod1" id="cod-prod1" min="0">
-                            <input type="text" name="prod1" id="prod1">
-                            <input type="number" name="qt-prod1" id="qt-prod1" min="0">
-                            <input type="text" name="emb-prod1" id="emb-prod1" maxlength="2">
+                    <div class="prod-up-left">
+                        <label for="cod-prod2">Cód:
+                            <input type="number" name="cod-prod2" id="cod-prod2" min="0">
+                            <input type="text" name="prod2" id="prod2">
                         </label>
                     </div>
+                    <div class="prod-up-right">
+                        <label for="qt-prod2">Qtde: <input type="number" name="qt-prod2" id="qt-prod2" min="0"></label>
+                        <label for="emb-prod2">Unid: <input type="text" name="emb-prod2" id="emb-prod2" maxlength="2"></label>
+                    </div>  
                     <div class="prod-down">
-                        <label for="separador">Separador:
-                            <select name="separador" id="separador">
-                                <option value="0">Selecione um separador</option>
-                                <option value="alen">Alen</option>
-                                <option value="joao">João</option>
-                                <option value="oliveira">Oliveira</option>
-                            </select>
-                        </label>
-                        <label for="motivo">Motivo:
-                            <select name="motivo" id="motivo">
-                                <option value="0">Selecione um motivo</option>
-                                <option value="ecarregamento">Erro Carregamento</option>
-                                <option value="eentrega">Erro Entrega</option>
-                                <option value="prodavariado">Produto avariado</option>
-                            </select>
-                        </label>
+                        <div class="div-separador">
+                            <label for="separador">Separador:
+                                <select name="separador" id="separador">
+                                    <option value="0">Selecione um separador</option>
+                                    <option value="alen">Alen</option>
+                                    <option value="joao">João</option>
+                                    <option value="oliveira">Oliveira</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="div-motivo">
+                            <label for="motivo">Motivo:
+                                <select name="motivo" id="motivo">
+                                    <option value="0">Selecione um motivo</option>
+                                    <option value="ecarregamento">Erro Carregamento</option>
+                                    <option value="eentrega">Erro Entrega</option>
+                                    <option value="prodavariado">Produto avariado</option>
+                                </select>
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="observacao">

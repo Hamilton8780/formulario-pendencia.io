@@ -155,46 +155,78 @@ legend{
     box-shadow: 2px 2px 5px black;
 }
 /*Fieldset dados do produto*/
+.prod-up-left,
+.prod-up-righ,
+.div-separador,
+.div-motivo{
+    float: left;
+}
+.prod-up-left label,
+.prod-up-right label{
+    margin-left: 10px;
+}
 #produto1,
 #produto2{
-    width: 95%;
+    width: 98%;
     margin: auto;
 }
-#cod-prod1{
+#cod-prod1,
+#cod-prod2{
     width: 65px;
 }
-#qt-prod1{
-    width: 50px;
+#qt-prod1,
+#qt-prod2{
+    width: 60px;
 }
-#prod1{
+#prod1,
+#prod2{
     text-transform: uppercase;
     width: 300px;
 }
-#emb-prod1{
-    width: 40px;
+#emb-prod1,
+#emb-prod2{
+    width: 50px;
 }
 .prod-up{
     margin-left: 50px;
     margin-bottom: 5px;
 }
 .prod-down{
-    margin-left: 48px;
-    margin-bottom: 15px;
+    float: left;
+    margin: 10px 0;
+}
+.prod-down label{
+    margin-left: 10px;
 }
 .observacao{
     background-color: white;
-    width: 95%;
+    width: 98%;
     margin: 0 auto 10px;
 }
 #obs{
-    width: 95%;
+    width: 99%;
     resize: none;
-    margin:3px 10px 10px;
+    margin:5px 3px;
+    border-radius: 5px;
     text-transform: uppercase;
 
 }
-
-@media (max-width: 900px){
+@media(max-width: 1368px){
+    main{
+        width: 80%;
+    }
+}
+@media(max-width: 1115px){
+    main{
+        width: 85%;
+    }
+}
+@media(max-width: 1050px){
+    main{
+        width: 90%;
+    }
+}
+@media (max-width: 995px){
     header{
         height: 120px;
         font-size: .9em;
@@ -209,7 +241,7 @@ legend{
         right: 10px;
     }
     main{
-        width: 100%;
+        width: 60%;
         top:120px;
     }
     form{
@@ -242,9 +274,16 @@ legend{
             width: 70%;
     }
 }
+@media(max-width: 905px){
+    main{
+        width: 90%;
+    }
+}
 @media (max-width: 545px){
+    
     main{
         font-size: .8em;
+        width: 100%;
     }
 
     .label-left-pendencia label,
@@ -257,6 +296,18 @@ legend{
     #cliente,
     #endcliente{
         width: 257px;
+    }
+    .prod-up-left,
+    .prod-up-right{
+    float: none;
+    margin-bottom: 5px;
+    text-align: center;
+    }
+   .div-motivo,
+   .div-separador{
+    width: 100%;
+    text-align: center;
+    margin: 5px;
     }
     .observacao{
         width: 95%;
